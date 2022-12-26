@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ee684cabcea268b8cdf7bc32b6c574a7cb4fdf3f656b4c86716fdd13425335ef"
+            "sha256": "89450c413d92de3b4fb62ca3abf78e160c1311c01cd7fd43a08aec51ae302097"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -525,14 +525,6 @@
             "index": "pypi",
             "version": "==9.3.0"
         },
-        "pip": {
-            "hashes": [
-                "sha256:65fd48317359f3af8e593943e6ae1506b66325085ea64b706a998c6e83eeaf38",
-                "sha256:908c78e6bc29b676ede1c4d57981d490cb892eb45cd8c214ab6298125119e077"
-            ],
-            "markers": "python_version >= '3.7'",
-            "version": "==22.3.1"
-        },
         "prometheus-client": {
             "hashes": [
                 "sha256:be26aa452490cfcf6da953f9436e95a9f2b4d578ca80094b4458930e5f584ab1",
@@ -593,13 +585,6 @@
                 "sha256:93007def75ae22f7cd991c84e02d434876818661f8df9ad5df9e950ff4e52cfd"
             ],
             "version": "==2022.7"
-        },
-        "pywix": {
-            "hashes": [
-                "sha256:af1a31fc67e2c1b5081494badc028a4b26273049bfb2086f9f239f0a27f18847"
-            ],
-            "index": "pypi",
-            "version": "==0.2.1"
         },
         "redis": {
             "hashes": [
@@ -728,14 +713,6 @@
                 "sha256:c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"
             ],
             "version": "==0.2.5"
-        },
-        "wheel": {
-            "hashes": [
-                "sha256:965f5259b566725405b05e7cf774052044b1ed30119b5d586b2703aafe8719ac",
-                "sha256:b60533f3f5d530e971d6737ca6d58681ee434818fab630c83a734bb10c083ce8"
-            ],
-            "markers": "python_version >= '3.7'",
-            "version": "==0.38.4"
         },
         "whitenoise": {
             "hashes": [
