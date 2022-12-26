@@ -15,7 +15,6 @@ from django.db.models.aggregates import Count,Max, Min, Sum
 from django.db.models import Value, F, Func, ExpressionWrapper
 from django.db.models.functions import Concat
 from django.db import transaction, connection
-
 from django.core.cache import cache
 from django.views.decorators.cache import cache_page
 from templated_mail.mail import BaseEmailMessage
@@ -29,6 +28,7 @@ from django.utils.decorators import method_decorator
 
 # LOGGERS
 logger = logging.getLogger(__name__)
+
 
 class HelloView(APIView):
     #@method_decorator(cache_page(5 * 60))
