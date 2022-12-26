@@ -3,7 +3,6 @@ import imp
 import logging
 from multiprocessing.spawn import import_main_path
 from operator import imod
-from turtle import title
 from django.db.models import DecimalField
 from django.shortcuts import render
 from django.core.exceptions import ObjectDoesNotExist
