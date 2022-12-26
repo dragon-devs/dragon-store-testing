@@ -1,0 +1,35 @@
+body{
+    background: rgb(15, 19, 30);
+    color: white;
+}
+
+.price{
+    margin:20px;
+    padding:20px;
+}
+
+table{
+    padding:20px;
+    border-spacing:5px;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+}
+
+table td{
+    padding:5px;
+    border-width: 1px;
+}
+.row{
+    color: rgb(185, 251, 238);
+    text-align: left;
+    margin-left: 20px;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+}
+
+li{
+    color: rgb(127, 160, 218);
+    margin: 20px;
+}

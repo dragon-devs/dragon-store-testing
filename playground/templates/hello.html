@@ -1,0 +1,54 @@
+
+{% load static %}
+<html>
+    <head> 
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+    <body>
+ 
+    {% if name %}
+    <h1>Hello {{ name }}</h1>
+    {% else %}
+    <h1>Hello World </h1>
+    {% endif %} 
+    <h1>{{ badheader }}</h1>
+    
+    {% comment %} <table>
+        {% for order in orders  %}
+        <tr>
+            <td>{{ order.id }} - {{ order.customer.first_name }}</td>
+            {% comment %} <td>{{ product.unit_price }}</td> {% endcomment %}
+        {% comment %} </tr>
+        {% endfor %}
+    </table>
+    <ul>
+    </ul> {% endcomment %}
+
+    
+    <ul>
+        {% for customer in result %}
+            {% comment %} <li>{{ r.order.customer.first_name }} {{r.order.customer.last_name}} <br> {{r.product.title}} - ID = {{ r.id }}</li> <p></p> {% endcomment %}
+
+            <li style="font-size:20px; color:red">{{customer.first_name}} {{customer.last_name}} - {{customer.id}}</li>
+            <ul style='list-style-type:none'>   
+                {% for order in customer.order_set.all %}
+                {% for cont in order.orderitem_set.all %}
+
+                    <li > ProductID: {{cont.product.id}} - {{cont.product.title}}  </li> 
+                    <li> ORDERID: {{order.id}} [{{cont.quantity}}] </li>
+                    <li style=' padding-bottom:25px; color:white;'>{{order.placed_at}} </li>
+                
+                {% endfor %}
+                {% endfor %}
+                  
+            </ul>
+        {% endfor %}
+
+    </ul>
+    
+    
+    
+    
+    </body>
+</html>
+
